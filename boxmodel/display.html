@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Document</title>
+
+    <style>
+        body{
+            font-family: sans-serif;
+        }   
+        
+        p{
+            width:70%;
+            background-color: #ccc;
+        }
+
+        h1{
+            border: 2px solid red;
+            /* width: 25%; */
+        }
+
+        a{
+            background-color: yellow;
+            /* width: 2000px;
+            height: 1000px;--elementos de linha nao receben as propriedades do box model*/
+
+            margin: 20px; /*so tem alteracao dos lados mais nao de cima e de la embaixo*/
+
+            padding:10px; /*; ele consegue fazer en todos os lado aplicaveis <>NAO USAR PROPRIEDADES DE BOX MODEL EM ELEMENTOS DE LINHA--assim mesmo aumenta area sencivel da ancora*/
+
+            display: inline-block;
+        }
+
+        strong{
+            /* padding:25px; */
+            background-color: #cd7777;
+
+            /*display: block;transforma elemento linha em bloco, ele faz quebra de linha e pode usar todas a propriedade*/
+
+            /* display: inline;transforma a elemento linha */
+
+            display: inline-block;/*usa as propriedades do box model pero mantem como sim for elemento linha*/
+            height: 60px;
+            width:50%;/*do paragrafo*/
+        }
+
+        b{
+            /* display: none;---retira o remove da linha uma propiedade */
+
+            /*visibility: hidden;---esconde o texto mais a area permanece <> visible --mantem o padrao*/
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Box sizing</h1>
+
+<p>Lorem ipsum, <a href="boxmodel.html">Box Model arquivo html</a> dolor sit amet consectetur,<b>texto em negrito com &lt;b&gt; </b>adipisicing elit. Ex, eligendi. Cupiditate perferendis quae consequuntur quam, exercitationem vitae quasi numquam similique aliquam, corporis quisquam <strong>texto em negrito</strong> ullam veniam officia at natus. Consectetur odio quidem sit nemo accusantium dolorum neque necessitatibus minus et <em>texto em italico com I</em> numquam libero nam repellat fugiat cupiditate mollitia, voluptatum aliquid inventore maxime ea temporibus reprehenderit dignissimos voluptate. Eligendi ullam unde earum doloribus quis qui quia molestiae porro error. Iusto, fugiat libero veritatis molestias alias animi aliquam facilis maiores accusamus sunt, officiis suscipit perferendis ab perspiciatis dolore id sint itaque? Eius, deleniti quas. Ipsa odit repudiandae esse id! Architecto a sequi reiciendis enim.</p>
+
+    
+</body>
+</html>

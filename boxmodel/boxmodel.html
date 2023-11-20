@@ -25,6 +25,7 @@
         h2{
             background-color: #37a951;
             margin-top: 56px;
+            border-bottom: 2px solid green;
         }
 
         .destaque{
@@ -45,14 +46,24 @@
         }
 
         .borda{
-            border-top: 10px solid red;
+            border-top-style:solid;
+            border-top-width:10px;
+            border-top-color:#287cac;
+            /* border-top: 10px solid red; */
             border-right: 10px dotted blueviolet;
             border-bottom: 10px dashed yellow;
-            border-left: 10px groove green;
+            border-left: 30px groove green;
             
 
             /* border: 10px solid red; */
             padding:10px;
+        }
+
+        .borda2{
+            border:5px dashed blue;
+        }
+        .outline{
+            outline: 5px dashed red;
         }
     </style>
 </head>
@@ -65,7 +76,12 @@
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolore ex vitae corporis ipsum, nobis delectus provident odit cumque veritatis? Eius, sed. Labore cupiditate Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis asperiores recusandae praesentium.
     </p>
     <p class="destaque size">Lorem ipsum dolor sit amet.</p>
+
     <p>Lorem ipsum dolor sit amet.</p>
+
+    <p class="destaque borda2 outline">Lorem ipsum dolor sit amet.</p>
+
+
 
     <h2>Padding</h2>
 
@@ -90,7 +106,18 @@
     </p>
     <p class="destaque borda">Lorem ipsum dolor sit amet.</p>
     <p>Lorem ipsum dolor sit amet.</p>
-    <p>Lorem ipsum dolor sit amet.</p>
+
+    <h2>outline</h2>
+
+    <p>Lorem ipsum dolor sit amet.
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolore ex vitae corporis ipsum, nobis delectus provident odit cumque veritatis? Eius, sed. Labore cupiditate Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis asperiores recusandae praesentium.
+    </p>
+    <p class="destaque outline">Lorem ipsum dolor sit amet.</p>
+
+    <p class="destaque borda2">Lorem ipsum dolor sit amet.</p>
+
+    <p class="destaque borda2 outline">Lorem ipsum dolor sit amet.</p>
+
     <p>Lorem ipsum dolor sit amet.</p>
     <p>Lorem ipsum dolor sit amet.</p>
     <p>Lorem ipsum dolor sit amet.</p>
