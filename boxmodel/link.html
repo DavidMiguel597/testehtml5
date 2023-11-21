@@ -6,14 +6,50 @@
     <title>Document</title>
 
     <style>
-      
+        /*h1, h2, a, p{ pode se por varios seletores, ele aplica em todos
+            font-family: sans-serif;
+            color: red;
+        }*/
+
+        body{
+            font-family: sans-serif;
+            color: red;/*quando se usa o body a cor e aplicado em todos menos na ancora o browser aplica um cor especifico, e quando nao existise por outro cor diferente*/
+        }
+
+        a{ /*para ser aplicado em todas as  ancoras links*/
+            display:inline-block;
+            padding: 3px;
+        }
+
+        a:link{ /*so poe a cor vermelha quem foi ja visitado*/
+            color:red;
+        }
+
+        a:visited{ /*so paginas ja visitadas*/
+            color:green;
+        }
+
+        a:hover{
+            background-color: #ccc; /*quando passar o mouse fica de cor gris*/
+        }
+
+        a:active{
+            background-color: yellow;/*se clikar com o mouse ou arrastrar fica de amarelo*/
+        }
+
 
 
     </style>
 </head>
 <body>
     <h1>links</h1>
-    <a href="display.html">Display</a>
+    <h2>Outro titulo</h2>
+
+    <a href="display.html">Display</a> | <a href="boxmodel.html">Box Model</a> | <a href="menosmal.html">Pagina inexistente</a>
+
+    <p>
+        Veja mais exemplos de box sizing aqui: <a href="box_sizing.html">Box sizing</a>
+    </p>
 
 
     
