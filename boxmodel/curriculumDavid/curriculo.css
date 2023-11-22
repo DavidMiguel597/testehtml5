@@ -1,6 +1,6 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 80%;
+    width: 80%; /*SE POE TAMANHO DA LARGURA PARA QUE HERDE DELE E SEJA APLICAVEL AS PROPRIEDADES*/
     margin: auto;
     color: #444;
     background-color: #ccc;
@@ -21,16 +21,16 @@ h2 {
     font-size: 36px;
     border-bottom: 3px solid;
     padding: 10px;
-    margin-top: 48px;
-    margin-bottom: 12px;
+    margin-top: 48px;/*aumenta distancia superior*/
+    margin-bottom: 12px;/*aumenta espacamento inferior*/
 }
 
 ul {
-    padding-left: 0;
+    padding-left: 0; /*A lista fica alinhada*/
 }
 
 li {
-    list-style-position: inside;
+    list-style-position: inside;/*as li tem que ir para adentro*/
 }
 
 .center {
@@ -43,31 +43,34 @@ li {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none;/*para ter underline na ancora primeriro se tira a toda decoracao*/
 }
 
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline;/*se poe underline*/
 }
 
-.menu {
-    text-align: center;
+.menu{
+   
+    text-align: right;/*se comporta como un texto pode se enviar para o centro, na direita ou ezquerda*/
 }
 
-.menu li {
+.menu li{
     list-style-type: none;
+
+    /* margin: 10px; */
+    display: inline-block;/*converte os elementos de linha em bloco mais mantendo a sequencia lineal, respetando 10px de margin en los lados assim como superior e inferior*/
+    padding: 0px;
+}
+
+.menu a{
+    background-color:#c1bebe;/*ele so da para ver a maozinha solo da ancora*/
+    padding: 16px;/*aumenta area sensivel do mouse mais so vai aplicar los lados porque se comporta como linha para isso tem que converter a bloco sem alterar a linha*/
     display: inline-block;
-    padding: 0;
 }
 
-.menu a {
-    background-color: #c1bebe;
-    padding: 16px;
-    display: block;
-}
-
-.menu a:hover {
+.menu a:hover{
     background-color: #333;
-    color: #fff;
+    color:#fff;
     text-decoration: none;
 }
