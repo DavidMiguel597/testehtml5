@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>trabalhando com imagens</title>
+
+    <style>
+        body{
+            font-size: 22px;
+            font-family: sans-serif;
+            width:700px;
+            margin: auto;
+
+            background-image: url(bg.jpg); /*bota uma imagem mais e repetida*/
+            /* background-repeat: repeat;e o padrao se repete*/
+
+            background-repeat: no-repeat;/*no se repete*/
+            /* background-repeat: repeat-y;ou repeat-x, ou no-repeat */
+
+            background-attachment: fixed;/*scroll e o padrao,fixed para que nao scrole*/
+
+            background-size:cover; /*pode ser contain(monstra a imagem na sua totalidade mesmo que se repeta, da preferencia ao conteudo) ou cover(a imagem se ve na sua totalidade  ) tambem,quando fica com 100% nao aparece a imagem ao todo precisa por
+            background-position: bottom;a imagem fica grudada la embaixo, ja nao scrola*/
+
+            background-position: right bottom;
+            
+        }
+
+        p{
+            line-height: 1.5; /*tamaño de la linha*/
+            text-align: justify; /*texto se adecua al tamaño*/
+        }
+        .img-logo{
+            width:400px;
+        }
+
+        .img-html{
+            float: left; /*encaixa imagem para esquerda*/
+        }
+
+        .img-css{
+            float: right; /*encaixa para a direita*/
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com imagens</h1>
+
+    <h2>Imagen bitmap png.</h2>
+
+    <img src="logo_ser-frontend-ico.png" class="img-logo" alt="logotipo serfrontend">
+
+    
+
+    <br>
+
+    <h2>Imagens vetoriais svg.</h2>
+    
+
+    <img src="logo_ser-frontend-ico.svg" class="img-logo" alt="logotipo serfrontend">
+
+    <h2>Imagens transparentes</h2>
+    <img src="logo_ser-frontend-ico-transparente.gif" alt="">
+
+    <br>
+
+    <img src="logo_ser-frontend-ico-transparente.png" alt="">
+
+    <h2>Gif animado</h2>
+    <img src="walk.gif" alt="animacao mulher andando">
+
+    <h2>Float</h2>
+    <img src="html5.png" alt="logotipo HTML5" class="img-html">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, corrupti? Dolor quibusdam optio nisi, tempore tempora tenetur soluta? Illum, iste.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus facilis illum adipisci expedita id eum quos assumenda exercitationem soluta autem quam quibusdam aliquam consectetur, odio natus atque impedit! Hic voluptas porro officia consequuntur voluptate, omnis qui provident! Ipsa dolorum blanditiis reprehenderit veniam magnam, quod animi tempora provident eum maiores rerum atque quas. Soluta assumenda expedita dignissimos nesciunt, repellat, eligendi autem iste omnis laboriosam hic a fugit dolor. Eius exercitationem quia ut pariatur, placeat nemo, repudiandae cum, voluptate dolor expedita id.</p>
+    <img src="css3.png"  alt="logotipo CSS3" class="img-css">
+    p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, corrupti? Dolor quibusdam optio nisi, tempore tempora tenetur soluta? Illum, iste.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus facilis illum adipisci expedita id eum quos assumenda exercitationem soluta autem quam quibusdam aliquam consectetur, odio natus atque impedit! Hic voluptas porro officia consequuntur voluptate, omnis qui provident! Ipsa dolorum blanditiis reprehenderit veniam magnam, quod animi tempora provident eum maiores rerum atque quas. Soluta assumenda expedita dignissimos nesciunt, repellat, eligendi autem iste omnis laboriosam hic a fugit dolor. Eius exercitationem quia ut pariatur, placeat nemo, repudiandae cum, voluptate dolor expedita id.</p>
+
+
+    
+</body>
+</html>
