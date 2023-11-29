@@ -1,0 +1,114 @@
+body{
+    margin: 0;/*margin zera debido a que por defeito bota um margem*/
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+}
+
+.hero{
+    background-image: url(../imagens/bg-3.jpg) ; /*url(../imagens) ele permite que o diretorio raiz)*/
+    height: 500px;/*tamanho*/
+    background-size: cover;/*para que a imagem se ajuste sem se duplicar*/
+    background-position: right center;
+    padding-top: 1px; /*se poe isso para que quando por um margen de uma lista menu nao dessa tododo o hero ou por uma border-top: 10px solid red*/
+}
+
+.hero-content{
+    margin: 80px auto 0; /*por dessa forma faz que o texto fique tanto para a direita como esquerda alinhados*/
+    width: 100%; 
+    text-align: center;/*centraliza o texto no background*/
+    color:white;
+}
+
+.hero-content h1{ /*trabalha no titulo principal*/
+    font-size: 56px;
+    text-shadow: 2px 2px 2px black;/*primer valor positivo vai para direita, segundo valor positivo vai para baixo, tercer valor esfumacamento 5px*/
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+.hero-content p{
+    background-color: rgba(0,0,0,0.7);/*red - green- blue alfa e o valor de transparencia 0:visivel na totalidad 1:totalmente opaco*/
+    font-size:  18px;
+    display: inline-block;
+    padding: 16px;
+    border-bottom: 2px solid;/*border en la parte inferior*/   
+}
+
+.hero nav ul{
+    margin: 20px 80px 0 0; /*margin top faz que todo o topo dessa por isso vai ter que por um padding top no hero para que se apoie e nao dessa junto com o menu*/
+    text-align: right;/*por o menu para a direita*/
+    
+}
+
+.hero nav li{
+    display: inline-block;
+    list-style: none;/*tira a bolinha da lista*/
+    border: 1px solid rgb(246, 243, 243); 
+    margin-left: 10px;
+}
+
+.hero nav a{
+    background-color: rgba(0,0,0,0.3);
+    padding: 16px;
+    display: block;
+    color:white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px; /*distacia entre letra*/
+}
+
+.hero nav a:hover{
+    background-color:rgba(0, 0, 0, 0.5)
+}
+
+main{ /*disminui o texto e centraliza*/
+    width: 90%;
+    margin: auto;
+    /* min-width: 400px; */
+    max-width: 860px;/*aplica os 80% pero com restricao 400 860px */
+}
+
+/* section{ 
+    padding-top: 32px; e para separar o primer article de la figura principal  por isso se mexe na section que e o pai ou por no articlr um margin-top:32px
+}*/
+
+
+article{
+
+    background-color: white;
+    padding: 16px;
+    margin-top: 32px;
+    margin-bottom: 32px;/*separar cada article na parte inferior*/
+}
+
+article h2{
+    border-bottom: 2px solid #ccc;
+    background-color: #eee;
+    padding:10px;
+    margin-top: 0px; /*ele vai grudar no padding do article 16px*/
+}
+
+/* fazendo o botao saiba mais */
+/* a .btn >>seleciona os elementos btn que ficam dentro do elemento a o espaco significa contido o descendencia <> a.btn >>> seleciona o elemnto a com a clase btn*/
+
+.btn{ /*fazendo o botao e chegar por na direita tem que tirar o display em linha e por em bloco e por um width*/
+    background-color: #cdc7c3;
+    display: block;/*se poe essa propriedade para por padding*/
+    padding: 12px 1
+    6px;
+    border-radius: 6px; /*para fazer o borede aredondado*/
+    margin-left: auto; /*o espaco que sobra colocando na margin left*/
+    width: fit-content; /*ele tem a propriedade  de ajustar a largura ao seu conteudo*/   
+}
+
+.rodape{ /*formatando o footer  por sombre e separando cada letra*/
+    color: white;
+    background-color: #6b6c68;
+    text-align: center;
+    padding: 30px;
+    text-shadow: 2px 2px 2px black; /*diretira, embaixo, esfumacamento, cor*/
+    letter-spacing: 2px;
+}
+
+
