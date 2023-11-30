@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ 
+    <title>Float e clear</title>
+    <style>
+        #container{
+            width: 80%;
+            background-color: #ccc;
+            padding: 15px;
+            overflow: auto; /*se usa essa propriedade para que o conteiner consiga enxergar as div se nao, nao conseguiria e so uma gambearra*/
+        }
+        #container div{
+            background-color: rgba(255, 0, 0, .3);
+            margin: 10px;
+            width: 20%;
+            height: 50px;
+         
+        }
+
+        #div1{
+            float: left;
+        }
+
+        #div2{
+            float: left;
+        }
+
+        #div3{
+            float: left;
+            /*clear: both; clear permite que nao considere o float aplicado sobre ele pode ser left, right ou both<>ele nao escuta ninguem*/
+        }
+         
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="div1">div1</div>  <!--div#div1 +  tab >>ja crea div  -->
+        <div id="div2">div2</div> 
+        <div id="div3">div3</div> 
+    </div>
+    
+</body>
+</html>

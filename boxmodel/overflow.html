@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+ 
+    <title>Float e clear</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            padding: 16px;
+            width: 300px;
+            margin-bottom: 16px;
+        }
+
+        .item{
+            background-color: blueviolet;
+            margin-bottom: 10px;
+            padding: 5px;
+
+            width: fit-content; /*mantem como elemento de bloco, a largura obedece a largura do conteudo*/
+        }
+
+        .fit_content .item{
+            width: fit-content;
+        }
+
+        .min_content .item{
+            width: min-content;/*coloca o tamanho da maior palavbra do bloco e ajusta a largura, menor conteud possivel*/
+        }
+
+        .max_content .item{
+            width: max-content;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container fit_content">
+        <div class="item">lore</div>  <!--div#div1 +  tab >>ja crea div  -->
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, amet.</div> 
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum reiciendis voluptatem omnis perspiciatis. Est, dignissimos. Eos nesciunt mollitia magni modi voluptate ipsam officiis hic minus!</div> 
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nobis voluptatibus reiciendis rem pariatur saepe, ipsum sapiente suscipit quas iusto labore tempora commodi similique possimus sequi amet, id eaque necessitatibus voluptates nostrum. Blanditiis eum placeat ea, qui molestiae eligendi! Ad autem sapiente vitae. Atque beatae quod cupiditate quisquam eaque officia qui reprehenderit quaerat deleniti. Facilis laudantium incidunt labore totam, repellat doloribus architecto, corrupti necessitatibus quae quas mollitia asperiores non, numquam cumque animi eligendi ipsa laborum.</div>
+    </div>
+
+    <div class="container min_content">
+        <div class="item">loremxxxxx</div>  <!--div#div1 +  tab >>ja crea div  -->
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, amet.</div> 
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum reiciendis voluptatem omnis perspiciatis. Est, dignissimos. Eos nesciunt mollitia magni modi voluptate ipsam officiis hic minus!</div> 
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nobis voluptatibus reiciendis rem pariatur saepe, ipsum sapiente suscipit quas iusto labore tempora commodi similique possimus sequi amet, id eaque necessitatibus voluptates nostrum. Blanditiis eum placeat ea, qui molestiae eligendi! Ad autem sapiente vitae. Atque beatae quod cupiditate quisquam eaque officia qui reprehenderit quaerat deleniti. Facilis laudantium incidunt labore totam, repellat doloribus architecto, corrupti necessitatibus quae quas mollitia asperiores non, numquam cumque animi eligendi ipsa laborum.</div>
+    </div>
+
+    <div class="container max_content">
+        <div class="item">loremxxxxx</div>  <!--div#div1 +  tab >>ja crea div  -->
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, amet.</div> 
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum reiciendis voluptatem omnis perspiciatis. Est, dignissimos. Eos nesciunt mollitia magni modi voluptate ipsam officiis hic minus!</div> 
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit nobis voluptatibus reiciendis rem pariatur saepe, ipsum sapiente suscipit quas iusto labore tempora commodi similique possimus sequi amet, id eaque necessitatibus voluptates nostrum. Blanditiis eum placeat ea, qui molestiae eligendi! Ad autem sapiente vitae. Atque beatae quod cupiditate quisquam eaque officia qui reprehenderit quaerat deleniti. Facilis laudantium incidunt labore totam, repellat doloribus architecto, corrupti necessitatibus quae quas mollitia asperiores non, numquam cumque animi eligendi ipsa laborum.</div>
+    </div>
+    
+</body>
+</html>
