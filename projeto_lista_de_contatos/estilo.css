@@ -1,0 +1,85 @@
+body {
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+    display: flex;/*para  centralizar imagens no body*/
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+
+html,body{
+    height: 100%;
+}
+
+.main-title {
+    color: #385555;
+}
+
+.list-wrapper{
+    background-color: white;
+    width:90%;
+    max-width: 500px;/*limita o tamanho do width*/
+    max-height: 400px;
+    overflow-y: auto;/*cria uma barrade rolaguem so no eixi Y*/
+    border-radius: 5px;/*arredondar a imagem*/
+    box-shadow: 0 2px 6px rgba(0,0,0,.2);/*sem deslocamento horizontal, deslocamento na vertical, esfumacamento , cor */
+}
+
+.list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-item{/*por um do lado do outro*/
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding: 16px;
+}
+
+.list-item-imagem img{
+    width: 80px;
+    border-radius: 50%;
+}
+
+.list-item__content{
+    padding: 0 20px;
+    /* background-color: yellow; so para termos de exemplo */
+    flex-grow: 1;/*ocupa todo espaco que sobra e leva para sim mesmo*/
+
+}
+
+.list-item__name{
+    font-size: 24px;
+    color:#385555 ;
+    margin: 0;
+}
+
+.list-item__email{
+    margin: 5px 0 0;
+    color:#aaa
+}
+
+.list-item:hover{ /*para passar encima passa um cor*/
+    background-color: #e8e8e8;
+
+}
+
+.list-item__actions{
+    display:flex;
+    gap:16px;
+    align-items: center;/*centraliza elementos actions*/
+    opacity:0;/*opacidade aplica transparencia(transparencia),*/
+   
+   
+}
+
+.list-item:hover .list-item__actions{ /*significa que vai accesar actions quando estive sobre item hover*/
+   opacity: 0.3;
+}
+
+

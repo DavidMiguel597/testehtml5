@@ -134,6 +134,7 @@
             justify-content: center;
             align-items: center;
             gap: 10px;
+            margin-bottom: 20px;
             
         }
 
@@ -155,6 +156,29 @@
             
         }
 
+        .flex-container10{
+            flex-direction: row;
+        }
+
+        .flex-container10 div{
+            background-color: green;
+            font-size: 36px;
+            color: white;
+        }
+
+        .flex-container10 .div2{
+            order: -1;/*a div passa para o final por ser a maior ao por 1, se por -1 vao para o inicio por ter menor ordem*/
+            align-self: center;/*centraliza a div*/
+        }
+
+        .flex-container10 .div1{
+            order: 1;
+            align-self: flex-end;/*alinha para o final*/
+        }
+
+        .flex-container10 .div3{
+            align-self:flex-start ;
+        }
 
 
         
@@ -221,6 +245,13 @@
     </div>
 
     <div class="flexbox flex-container9">
+        <div class="div1">1</div>
+        <div class="div2">2</div>
+        <div class="div3">3</div>
+        <div class="div4">4</div>
+    </div>
+
+    <div class="flexbox flex-container10">
         <div class="div1">1</div>
         <div class="div2">2</div>
         <div class="div3">3</div>
