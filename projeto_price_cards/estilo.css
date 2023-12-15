@@ -1,0 +1,120 @@
+body{
+    background-color: #0c1014;
+    color: white;
+    width: 90%;
+    max-width: 960px;
+    margin: 0 auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main-title{
+    font-size: 62px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 46px 0;/*acima,embaixo/direita,esquerda*/
+}
+
+.header{
+    display:flex; /*ra por un do lado do outro*/
+    background-color: #05080a;
+    padding: 16px;
+    justify-content: space-between;/*separar os elementos um para cada canto ao inicio e para ao final*/
+    align-items:center;/*alinha os elementos*/
+}
+
+.header__logo{
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-left: 16px;
+    letter-spacing: 2px;
+}
+
+
+.header__nav ul{ /*se poe ul, isso para atinguir as li*/
+    display: flex;
+    list-style-type: none;
+    font-size: 18px;
+    gap: 16px;
+    
+}
+
+.header__nav a{ /*seleciona a tag a que descendem do header*/ 
+    color: white;
+    text-decoration: none;/*tira as linhas do link*/
+    padding: 14px;
+    border-radius: 6px;
+}
+
+.header__nav a:hover{
+    text-decoration: underline;
+}
+
+a.header__nav--active{ /*selecciona a tag a contida no header__nav--active*/
+    background-color: #cbe300;/*se por cor na letra nao funciona por caisa da especificidade, prelaces a clase com elemento a que so a clase*/
+    color:#0c1014;
+    /* pointer-events:none;significa que nao vao receber elementos de click */
+    cursor: not-allowed;/*defaul*/
+}
+
+.pricing{
+    display:flex;
+    gap:16px;
+}
+
+.pricing-plan{
+    flex:1;/*atalho grow(1)shrink(2) basis(3)*/
+    background-color: #1f262c;
+    padding: 30px;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px -6px black;/*deslocamento X, deslocamento Y, expancao da sombra(+ ou -),esfumacamento, cor*/
+    display: flex;/*para ter uma debaixo d otra, para ello se diz a direcao tambem por padrao e lineal se muda para columna a deirecao*/
+    flex-direction: column;
+}
+
+.pricing-plan__title{
+    text-transform: uppercase;
+    border-bottom: 2px solid #cbe300;
+    margin-top: 0;
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.pricing-plan p{
+    margin-top: 0px;
+}
+
+.pricing-plan__price{
+    font-size: 34px;
+}
+
+.pricing-plan_features{
+    margin:0 0 35px;
+    color:#b5b5b5;
+    padding-left: 16px;
+    line-height: 1.8;/*tamanho da linha*/
+    flex: 1;/*equivale decir flex-grow para que os elementos fique alinhado a ala embaixo e o esoaco fique dentro das carateristicas do produto*/
+}
+
+.pricing-plan_cta{
+    text-decoration: none;
+    color:#0c1014;
+    background-color: #cbe300;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;/*poe em negrito*/
+    padding:16px 10px;
+    text-align: center;
+    
+}
+
+/*psudoelemento mudar de cor a bolinha da lista*/
+.pricing-plan_features li::marker{
+    color:#cbe300;
+}
+
+.pricing-plan_cta:hover{ /*pseudoclase :*/
+    outline:2px solid #cbe300;/*pode por border mais o apropiado e outline que nao interfere no elemento*/
+    background-color: transparent;
+    color:white;
+}
