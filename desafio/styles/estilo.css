@@ -1,0 +1,69 @@
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ccc;
+    background-image: url(../imagens/bg-2.jpg);
+    background-size: 100%;/*cover:cubre todo desliza com a barra de rolaguem*/
+    background-repeat: no-repeat;
+
+}
+
+.hero{
+    padding: 1px;
+}
+
+.hero-content{
+    margin: 100px auto 0;
+    width: 80%;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1{
+    text-transform: uppercase;
+    font-size: 56px;
+    text-shadow: 2px 2px 2px black;
+    margin-bottom: 0px;
+}
+
+.hero-content p{
+    background-color: rgba(0, 0, 0, .7);
+    font-size: 18px;
+    padding: 16px;
+    display: inline-block;/*encuadra o fundo al text*/
+    border-bottom: 2px solid;/*para sobresaltar a parte inferior*/
+}
+
+.content-section{ 
+    display:flex;/*os cards ficam em uma linha so*/
+    flex-wrap: wrap;/*quebra linha*/
+    gap:16px;/*distanciamento de cada card*/
+    width: 860px;
+    margin:auto; /*centraliza as cards*/
+    background-color: white;
+    padding: 16px;/*distancamento do card do container*/
+}
+
+.card{
+    flex-basis: 250px;
+    /* outline: 2px solid blue;para distinguir as cards */
+    flex-grow: 1;
+}
+
+.card img{
+    width:100%;/*se faz isso para que a imagem se encaixe debido a que o tamanhao do card es de 250px, el tamanho o conten es 860px e o tamanho real do card es 300px*/
+    display:block /*imagen e um elemnto em linha para tirar o espaco se converte em bloco*/
+}
+
+.card p{
+    background-color: #393535;
+    color: white;
+    margin: 0;
+    padding: 8px;
+    text-transform: capitalize;
+}
