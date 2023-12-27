@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Calc()</title>
+    <style>
+        :root{ /*nao gera especificidade e igual ao html*/
+            --header-height: 15rem; /*usando variaveis nesse caso altura do cabecalho*/
+            --mai-color:rgba(255, 0, 0, .3)
+        }
+
+        html{
+            font-size: 62.5%;/*equivale a 10*/
+            
+        }
+
+        header{
+            width:100%;
+            background-color:var(--mai-color);
+            height:var(--header-height);
+            font-size: 2rem;
+            position:fixed;
+            top: 0;
+            left: 0;;
+        }
+
+        main{
+            --header-height:2rem;/*seim colocamos uma variable dentro de uma estrutura so serve para aquilo, se chegase por no html serve para tudo*/
+            min-height:calc(100vh - var(--header-height) - 2rem);/*da para fazer calculos com varias medidas*/
+            background-color: #ccc;
+            font-size: 2rem;
+            margin-top:var(--header-height);
+        }
+
+        p{
+            margin: calc(var(--header-height) * 2);/*ele vai usar o valor da variavel main que que e mais proximo e nao do html*/
+        }
+
+        footer{
+            height: 10rem;
+            font-size: 2rem;
+            background-color: var(--mai-color);
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>header</header>
+    <main>main
+        <p>teste</p>
+    </main>
+    <footer>footer
+        <p>teste 2</p> <!--vai procurar o margim por escopo o ambiente mais proximo se nao achar ele vai ao inicio-->
+    </footer>
+    
+</body>
+</html>

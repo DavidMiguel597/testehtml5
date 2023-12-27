@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Unidades de medida</title>
+
+    <style>
+        html{
+            font-size: 62.5%;/*equivale a 10px*/
+            padding-bottom: 550px;
+        }
+
+        h1{
+            font-size: 3.4em;
+        }
+
+        b{
+            color:red;
+            font-size: 1em;/*se relaciona com o elemento pai 30px*/
+
+            color:red;
+            font-size: 1rem;/*se relaciona com o elemento do html valendo 10px*/
+
+
+
+        }
+
+        p{
+            font-size: 3em;/*px:pixel um quadradinho equivale a 1em 16px nesse caso se relaciona com html valendo 30px*/
+            width:10em;
+            background-color:#ccc;
+        }
+
+        .porcentagem{
+            width:60%;
+            height:500px;
+            background-color: yellow;
+        
+            
+        }
+
+        .porcentagem p{
+            background-color: orange;
+            padding-top: 50%;
+            width: 50%;
+            font-size: 3rem;
+        }
+
+        .padding-em{
+            background-color: red;
+            padding: 3em;
+        }
+
+        .padding-em p{
+            background-color: transparent;
+            margin: 0;
+            padding: 1em; /*equivale a 30px de p 3em  ou 1rem = 10px*/
+            font-size: 5rem; /*se voce quer que font size e o padding aumenete junto usa unidade "em" se nao quer, que o padding fique fixo muda para "px" ou "rem"*/
+        }
+
+        .viewport-container{
+           font-size: 3rem;
+           height: auto;/*libera texto do background azul*/
+
+        }
+
+        .viewport{
+            width:90vw;/*em porcentagem se relaciona com bloco amarelo*/
+            height:90vh;
+            background-color: rgba(0, 0, 255, 0.403);
+        }
+
+        .em{
+            width:20em;/*usa a funcao como se for pixeles*/
+            padding:1em;
+            margin:1em;
+            background-color: orange;
+            font-size: 2em;
+        }
+
+        .ch{
+            width:20ch; /*character*/
+            width:180px;
+            padding:1em;
+            margin:1em;
+            background-color: orange;
+            font-size: 2em;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Umidades de medida</h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus b  
+        <b>texto em negrito</b>
+        blanditiis ipsum, obcaecati quasi odio repellendus eveniet illum exercitationem quae molestias omnis ipsa dolores, asperiores architecto maxime nesciunt voluptate cumque repellat.16px
+    </p>
+
+    <div class="porcentagem">
+        <p> %</p>
+    </div>
+
+    <div class="padding-em"><p>padding com em</p>
+    </div>
+
+    <div class="porcentagem viewport-container"><!--ele tem width:60%;
+        height:500px;-->
+        <div class="viewport">
+            viewport
+        </div>
+    </div>
+
+    <div class="em">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores repellat provident animi at nam quibusdam deserunt eaque ipsam suscipit reiciendis?
+    </div>
+  
+    <div class="ch">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto enim earum ipsum omnis nihil nostrum repellendus vel nobis et inventore.
+    </div>
+</body>
+</html>

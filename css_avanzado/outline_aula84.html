@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>Outline</title>
+
+    <style>
+
+        div{
+            margin-left: 20px;
+        }
+
+        .div1{
+            width:200px;
+            height:100px;
+            background-color: yellow;
+            outline: 4px solid red;
+            box-sizing: border-box;
+            margin-bottom: 50px;
+        }
+
+        .div1:hover{
+            border: 10px solid red;
+        }
+
+        .div2{
+            width:200px;
+            height:100px;
+            background-color: orange;
+            outline: 4px solid green;
+            box-sizing: border-box;
+            margin-bottom: 50px;
+        }
+
+        .div2:hover{
+            outline: 10px solid green;
+        }
+
+        .div3{
+            width:200px;
+            height:100px;
+            background-color: orange;
+            outline: 4px solid green;
+            outline-style: dashed;
+            box-sizing: border-box;
+            outline-offset: 16px;/*anda 16px para afora, outline nao muda o elemento nem a posicao */
+            margin-bottom: 50px;
+         
+        }
+
+        .div3:hover{
+            outline-width: 10px;
+        }
+
+
+        .div4{
+            width:200px;
+            height:100px;
+            background-color: orange;
+            outline: 4px solid green;
+            outline-style: dashed;
+            box-sizing: border-box;
+            outline-offset: -16px;/*anda 16px para afora, outline nao muda o elemento nem a posicao */
+            
+        }
+
+
+
+        .div4:hover{
+            outline-width: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="div1">
+        box-sizing
+    </div>
+
+    <div class="div2">
+        outline
+    </div>
+
+    <div class="div3">
+        outline
+    </div>
+    
+    <div class="div4">
+        outline
+    </div>
+    
+
+    
+</body>
+</html>
