@@ -8,20 +8,67 @@
 
         @font-face{
             font-family: nadia;
-            src:url(nadia/nadia_serif.ttf) format("truetype"), (nadia/nadia_serif.woff) format("woff"), (nadia/nadia_serif.svg) format("svg");
+            src:
+            local("Nadia serif"),
+            local("Nadia-serif")
+            url(nadia/nadia-serif.ttf) format("truetype");
+        }
+
+        /*fonts ESQUIRREL para trazaer outras fontes*/ 
+        
+        @font-face {
+            font-family: 'chunkfiveregular';
+            src: url('chunkfive/chunkfive-regular-webfont.woff2') format('woff2'),
+                url('chunkfive/chunkfive-regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
 
         }
+ 
+        @font-face {
+            font-family: 'alex_brushregular';
+            src: url('alex_brush/alexbrush-regular-webfont.woff2') format('woff2'),
+                url('alex_brush/alexbrush-regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+
+        }
+
+
+        @font-face {
+            font-family: 'kaushan_scriptregular';
+            src: url('kaushan/kaushanscript-regular-webfont.woff2') format('woff2'),
+                url('kaushan/kaushanscript-regular-webfont.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+
+}
+        
+
+    
+
+       
+
+        
+
 
         /*extensao .eot(para internet explorer); .svg(para us antigos); .ttt(para bom suportes)*/
 
         h1{
-            font-family: nadia;
+            font-family:'kaushan_scriptregular';
+        }
+
+        h2{
+            font-family:'alex_brushregular';
+            font-size: 4em;
         }
     </style>
 
 </head>
 <body>
-    <h1>Font-face</h1>
+    <h1>David Miguel Tellez Huaccha</h1>
+    <h1>Alis Esmeralda Moraes Tellez Huaccha</h1>
+    <h2>Lianny seras minha</h2>
     
 </body>
 </html>
